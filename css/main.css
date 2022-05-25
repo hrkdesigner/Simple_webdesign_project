@@ -1,0 +1,528 @@
+/* Chill and Grill css style:: */
+
+/* Global css style:: */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #222222;
+}
+
+
+/* Header tag style:: */
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.418);
+   }
+
+#logo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#logo a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#logo img {
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    padding-left: 50px;
+}
+
+nav{
+    width: 75%;
+    height: auto;
+}
+
+nav ul {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px black;
+}
+
+
+ul li:nth-of-type(5){
+    width: 170px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #04020d;
+    margin-left: 50px;
+}
+
+ul li:nth-of-type(5):hover{
+    background-color: #ff5040;
+    cursor: pointer;
+}
+
+ul li:hover a{
+    color: #ff5040;
+    text-shadow: 0 0 1px #ff5040;
+}
+
+ul li:nth-of-type(5) a{
+    color: #fff;
+    font-size: 16px;
+}
+ul li:nth-of-type(5):hover a{
+    color: #222222;
+    text-shadow: 0 0 1px black;
+}
+
+
+/* Main tag style:: */
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+#border {
+    border: 3px solid #04020d;
+    height: 80vh;
+    width: 90%;
+    margin: 50px 20px;
+    display: flex;
+}
+
+#border section {
+    width: 60%;
+    height: 100%;
+  
+}
+#border section:nth-of-type(1) {
+    width: 40%;
+    background-color: #04020d;
+}
+
+#border section:nth-of-type(1) section {
+    width: 99%;
+    height: 100%;
+    background-color: #04020d;
+    
+}
+
+#border section:nth-of-type(1) section div {
+    height: calc(100% - 300px);
+    background-color: #04020d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #f9f9f9;
+    font-size: 16px;
+    align-content: flex-start;
+}
+#border section:nth-of-type(1) section div span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+#border a {
+    color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#border section:nth-of-type(1) section div span:nth-of-type(1){
+    padding: 30px 0;
+    font-size: 33px;
+}
+
+#border section:nth-of-type(1) section div span:nth-of-type(2) {
+    width: 300px;
+    padding: 10px 5px;
+    border: 1px solid #f9f9f9;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#border section:nth-of-type(1) section div span:nth-of-type(2):hover {
+    background-color: #f9f9f9;
+    
+}
+#border section:nth-of-type(1) section div span:nth-of-type(2):hover a {
+    color: #04020d;
+    font-weight: 900;
+}
+#border section:nth-of-type(1) section img {
+ height: 300px;
+ object-fit: cover;
+}
+
+#border img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1, h2{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #191919;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Footer tag style:: */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #04020d;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/* About Us page style:: */
+.about, .about_chef {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.about_first, .about_second, .about_chef_info, .about_chef_images {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    
+
+}
+
+.about_first h1, .about_chef_info h1 {
+    width: 80%;
+    padding-top: 70px;
+}
+.about_first div, .about_chef_info div {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-shadow: 0 0 1px black;
+}
+
+#about_img, #about_chef_img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+   
+}
+
+#about_img img , #about_chef_img img{
+    width: 200px;
+    object-fit: cover;
+    margin: 0 5px;
+}
+
+#about_chef_img img{
+    margin: 0 30px;
+    border-radius: 10px;
+}
+.about_second, .about_chef_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+}
+
+video {
+    width: 550px;
+    object-fit: cover;
+}
+
+
+/* Menu page style:: */
+
+.menu_page> section{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+
+}
+
+.menu_page h1 {
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 20px;
+    
+}
+
+#item{
+    position: relative;
+    height: 250px;
+}
+
+#item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.price{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #ff5040b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #222222b0;
+    width: 250px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #f9f9f9;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Chef pages style:: */
+.chef {
+    margin: 100px;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chef h1 {
+    width: 100%;;
+    padding: 0;
+    margin: 0;
+}
+
+.chef section {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#each_chef {
+    width: 330px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #ff504091;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+#each_chef * {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #191919;
+    font-size: 15px;
+
+}
+
+.chef a {
+    width: 100%;
+    height: 100%;
+    background-color: #ff5040;
+}
+.chef_mail {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.our_chefs {
+    width: 500px;
+    object-fit: cover;
+}
+
+
+
+/* Contact page style:: */
+
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+.contact section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact_part_one div, .contact_part_one figure {
+    width: 50%;
+    height: 500px;
+    padding: 0 20px;
+}
+.contact_part_one div{
+    padding: 0;
+    padding-right: 20px;
+}
+.contact_part_one form input,
+.contact_part_one form textarea {
+    display: block;
+    width: 550px;
+    height: 40px;
+    margin: 5px 0;
+    outline: none;
+    border: 1px solid #19191965;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.contact_part_one form textarea {
+    height: 120px;
+}
+
+.contact_part_one button {
+    width: 150px;
+    height: 40px;
+    background-color: #ff5040;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px #ff5040;
+}
+.contact img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact_part_two {
+    width: 100%;
+    padding: 30px 100px;
+    margin-bottom: 50px;
+}
+
+.contact_part_two h2 {
+    width: 100%;
+    font-size: 35px;
+    border-bottom: 2px solid #222222;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 400px;
+    background-color: #ff5040;
+    text-align: center;
+    color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+
+#info {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    width: 500px;
+    height: 150px;
+}
+address * {
+    padding: 10px 0;
+}
+.phone, .email {
+    display: block;
+    width: 100%;
+}
+
+.takeout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.takeout img {
+    width: 250px;
+    object-fit: contain;
+}
+
+.takeout span {
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+/* End of Chill and Grill css style:: */
